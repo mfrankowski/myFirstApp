@@ -8,6 +8,7 @@ GET     /example/                   controllers.Application.example()
 GET     /example2/                  controllers.AnotherController.anotherExample()
 GET     /example3/:anotherMessage   controllers.AnotherController.anotherExample2(anotherMessage:String)
 GET     /example4/:a/:b			    controllers.AnotherController.addition(a:Integer,b:Integer)
+GET     /example5/			   		controllers.AnotherController.displayObject()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
