@@ -11,4 +11,8 @@ public class Application extends Controller {
     return ok(index.render("Your new application is ready."));
   }
   
+  public static Result example() {
+	  String s = "Hello Mr. View";
+	  return ok(fun.render(s));
+  }
 }
